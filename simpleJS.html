@@ -1,0 +1,60 @@
+<html>
+	<head>
+		
+		<title>Demo Javascript </title>
+		
+		<style type="text/css">
+			body{background-color:rgb(5, 186, 241);}
+			#D1{background-color:rgb(221, 235, 20);height:300px;width:300px;}
+		</style>
+		
+		<script type="text/javascript">
+			function alertFun(){
+				alert('Hello Tarannum');
+			}
+			
+			function confirmFun(){
+				if(confirm("Are you sure..??"))
+				{
+					alert("YESSSSS");
+				}
+				else
+				{
+					alert("NOOOOO");
+				}
+			}
+			
+			function promptFun(){
+				var FirstName=prompt("Enter First Name Here..");
+				var MiddleName=prompt("Enter Middle Name Here..");
+				var LastName=prompt("Enter Last Name Here..");
+				alert(FirstName +" "+MiddleName+" "+LastName);
+			}
+
+			
+		</script>
+		
+		<script src="demo.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+		
+		<div id="D1">
+
+		</div><hr/>
+		
+		<input type="button" value="Alert Inline" onclick="alert('Hello ')" />
+		<input type="button" value="Alert Internal" onclick="confirm('Are you sure')" />
+		<input type="button" value="Alert External" onclick="prompt('Enter your name')" /><hr/>
+		
+		<input type="button" value="Confirm Inline" onclick="alertFun()" />
+		<input type="button" value="Confirm Internal" onclick="confirmFun()"/>
+		<input type="button" value="Confirm External" onclick="promptFun()"/><hr/>
+		
+		<input type="button" value="Prompt Inline" onclick="alertFun()"/>
+		<input type="button" value="Prompt Internal" onclick="confirmFun()"/>
+		<input type="button" value="Prompt External" onclick="promptFun()"/><hr/>
+		
+		
+	</body>
+</html>
